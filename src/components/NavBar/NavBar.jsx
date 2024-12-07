@@ -25,8 +25,8 @@ export default function NavBar() {
           <a href="#">
             <img src="/youtube.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
+          <a href="https://www.linkedin.com/in/atul-patankar-5963a0289/">
+            <img src="/linkedin.png" alt="" />
           </a>
         </div>
       </div>
