@@ -18,7 +18,7 @@ a {
   color: inherit;
 }
 body {
-  background-color: #0c0c1d;
+  background-color: black; //#0c0c1d;
   color: lightgray;
 }
 .course {
@@ -31,4 +31,13 @@ body {
     height: 200px;
     background-color: white;
   }
+}
+.hero{
+  background: linear-gradient(180deg, black, #0c0c1d);
+}
+.services {
+  background: linear-gradient(180deg, #0c0c1d, black);
+}
+.portfolio {
+  background: linear-gradient(180deg, black, #0c0c1d);
 }
