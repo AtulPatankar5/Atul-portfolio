@@ -83,13 +83,13 @@ export default function Portfolio() {
   // Function to get color based on scroll progress
   const getColor = (progress) => {
     if (progress < 0.25) {
-      return "linear-gradient(90deg, #00FF00, #00FF00)"; // Green
+      return "linear-gradient(90deg, #015d01,#015d01)"; // Green
     } else if (progress < 0.5) {
       return "linear-gradient(90deg, #FFA500, #FFA500)"; // Green to Orange
     } else if (progress < 0.75) {
       return "linear-gradient(90deg, #FFFF00, #FFFF00)"; // Orange to Yellow
     } else {
-      return "linear-gradient(90deg, #FF0000, #FF0000)"; // Yellow to Red (Final stage)
+      return "linear-gradient(90deg,  #650505, #650505)"; // Yellow to Red (Final stage)
     }
   };
 
