@@ -67,7 +67,7 @@ const Single = ({ item }) => {
 
 export default function Portfolio() {
   const ref = useRef();
-  const [progressColor, setProgressColor] = useState("green");
+  // const [progressColor, setProgressColor] = useState("green");
 
   // useScroll hook to track the scroll progress of the target (ref)
   const { scrollYProgress } = useScroll({
@@ -93,16 +93,16 @@ export default function Portfolio() {
     }
   };
 
-  useEffect(() => {
-    const unsubscribe = scrollYProgress.onChange((progress) => {
-      // Set the gradient background color based on scroll progress
-      const newColor = getColor(progress);
-      setProgressColor(newColor);
-    });
+  // useEffect(() => {
+  //   const unsubscribe = scrollYProgress.onChange((progress) => {
+  //     // Set the gradient background color based on scroll progress
+  //     const newColor = getColor(progress);
+  //     setProgressColor(newColor);
+  //   });
 
-    // Cleanup subscription when the component is unmounted
-    return () => unsubscribe();
-  }, [scrollYProgress]); // Only re-run when scrollYProgress changes
+  //   // Cleanup subscription when the component is unmounted
+  //   return () => unsubscribe();
+  // }, [scrollYProgress]); // Only re-run when scrollYProgress changes
 
   return (
     <div className="portfolio" ref={ref}>
@@ -111,7 +111,7 @@ export default function Portfolio() {
         <motion.div
           style={{
             scaleX: scaleX,
-            backgroundImage: progressColor, // Set the dynamic gradient as background
+            backgroundImage: "orange", // Set the dynamic gradient as background
           }}
           className="progressBar"
         ></motion.div>
