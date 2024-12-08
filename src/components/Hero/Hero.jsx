@@ -35,7 +35,7 @@ const sliderVariants = {
     transition: {
       repeat: Infinity,
       duration: 20,
-      repeatType: "mirror"
+      repeatType: "mirror",
     },
   },
   scrollbuttons: {
@@ -46,6 +46,14 @@ const sliderVariants = {
       repeat: Infinity,
     },
   },
+};
+const handleScrollToPortfolio = () => {
+  const portfolioSection = document.getElementById("Portfolio");
+  portfolioSection.scrollIntoView({ behavior: "smooth" });
+};
+const handleScrollToContacts = () => {
+  const portfolioSection = document.getElementById("Contact");
+  portfolioSection.scrollIntoView({ behavior: "smooth" });
 };
 export default function Hero() {
   return (
@@ -62,11 +70,18 @@ export default function Hero() {
             Web Developer and UI Designer
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              {" "}
+            <motion.button
+              variants={textVariants}
+              onClick={handleScrollToPortfolio}
+            >
               See the latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button
+              variants={textVariants}
+              onClick={handleScrollToContacts}
+            >
+              Contact Me
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

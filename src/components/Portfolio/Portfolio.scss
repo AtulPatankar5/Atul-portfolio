@@ -1,0 +1,86 @@
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+
+    .progressBar {
+      height: 5px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1000px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+
+      .imgContainer {
+        flex: 1;
+        height: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          //   margin-top: 50%;
+          // margin: auto;
+        }
+      }
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h2 {
+          font-size: 40px;
+        }
+        p {
+          color: gray;
+          font-size: 15px;
+        }
+
+        button {
+          background-color: orange;
+          border: none;
+          border-radius: 20px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+          font-weight: 800;
+          transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease; /* Transition for transform and background-color */
+
+
+          &:hover {
+            background-color: #776e66;
+            // transition: background-color 0.3s ease;
+            color: white;
+            // width: 190px;
+            // transform: scale(0.95);
+          }
+          &:active {
+            transform: scale(0.90); /* Reduce size when clicked */
+          }
+        }
+      }
+    }
+  }
+}

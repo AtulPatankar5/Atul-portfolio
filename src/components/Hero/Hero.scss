@@ -1,13 +1,13 @@
 .hero {
   height: calc(100vh - 100px);
-  // background: linear-gradient(180deg, black, #0c0c1d);//, #111132);
+  background: linear-gradient(180deg, black, #0c0c1d); //, #111132);
   overflow: hidden;
   position: relative;
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
-    margin-left: 200px;
+    margin-left: 20%;
 
     .textContainer {
       height: 100%;
@@ -18,23 +18,33 @@
       gap: 40px;
 
       h2 {
-        font-size: 30px;
+        font-size: 200%; //30px;
         color: rebeccapurple;
         letter-spacing: 10px;
       }
       h1 {
-        font-size: 65px;
+        font-size: 400%; //65px;
       }
       .buttons {
         button {
+          z-index: 999;
+          position: relative;
           padding: 20px;
           border: 1px solid white;
-          border-radius: 10px;
+          border-radius: 30px;
           background-color: transparent;
           color: white;
           margin-right: 20px;
           cursor: pointer;
           font-weight: 500;
+          &:hover {
+            background-color: rgba(
+              255,
+              255,
+              255,
+              0.1
+            ); // Adding hover effect for better user feedback
+          }
         }
       }
       img {
@@ -50,15 +60,15 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
-}
+  }
   .imgContainer {
     height: 100%;
     position: absolute;
     top: 0;
-    right: 100px;
-    img{
-      width: 400px;
-      height: auto ;
+    right: 5%;
+    img {
+      width: 60vh;
+      height: auto;
     }
   }
 }

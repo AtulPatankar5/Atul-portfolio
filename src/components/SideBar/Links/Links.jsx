@@ -26,13 +26,13 @@ const itemVariants = {
   },
 };
 export default function Links() {
-  const items = ["HomePage", "Services", "Portfolio", "Contact", "About"];
+  const items = ["HomePage", "Services", "Portfolio", "Contact"];//, "About"];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
-          style={{ fontSize: "30px" }}
+          style={{ fontSize: "20px" }}
           href={`#${item}`}
           key={item}
           variants={itemVariants}
