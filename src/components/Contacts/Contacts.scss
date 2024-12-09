@@ -42,6 +42,7 @@
       position: absolute;
       stroke: #c56f13; // orange border color
       stroke-width: 0.2; // border width
+      z-index: -1;
     }
     
     .phoneSvg svg {
